@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+		<title>minefield</title>
+
+<script type="text/javascript">
+
+var targetX = 4;
+var targetY = 1;
+
+function myFunction(x, y) {
+  if ( targetX === x && targetY === y){
+  	console.log("you won have a star");
+  	document.getElementById(x + "-" + y).setAttribute("style", "background-color: black");  //"background-image:url('./assets/images/east.png')");
+  }
+  else {
+    console.log("missed " + x + " " + y);
+
+  }
+
+}
+
+</script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="row 01">
+			  <div id="0-0" class="col-md-1 1 -1" onclick="myFunction(0, 0);"></div>
+			  <div id="1-0" class="col-md-1 2 -1" onclick="myFunction(1, 0);"></div>
+			  <div id="2-0" class="col-md-1 3 -1" onclick="myFunction(2, 0);"></div>
+			  <div id="3-0" class="col-md-1 4 -1" onclick="myFunction(3, 0);"></div>
+			  <div id="4-0" class="col-md-1 5 -1" onclick="myFunction(4, 0);"></div>
+			  <div id="5-0" class="col-md-1 6 -1" onclick="myFunction(5, 0);"></div>
+			  <div id="6-0" class="col-md-1 7 -1" onclick="myFunction(6, 0);"></div>
+			  <div id="7-0" class="col-md-1 8 -1" onclick="myFunction(7, 0);"></div>
+			</div>
+			<div class="row 02">
+			  <div id="0-1" class="col-md-1 1 -2" onclick="myFunction(0, 1);"></div>
+			  <div id="1-1" class="col-md-1 2 -2" onclick="myFunction(1, 1);"></div>
+			  <div id="2-1" class="col-md-1 3 -2" onclick="myFunction(2, 1);"></div>
+			  <div id="3-1" class="col-md-1 4 -2" onclick="myFunction(3, 1);"></div>
+			  <div id="4-1" class="col-md-1 5 -2" onclick="myFunction(4, 1);"></div>
+			  <div id="5-1" class="col-md-1 6 -2" onclick="myFunction(5, 1);"></div>
+			  <div id="6-1" class="col-md-1 7 -2" onclick="myFunction(6, 1);"></div>
+			  <div id="7-1" class="col-md-1 8 -2" onclick="myFunction(7, 1);"></div>
+			</div>
+			<div class="row 03">
+			  <div id="0-2" class="col-md-1 1 -3" onclick="myFunction(0, 2);"></div>
+			  <div id="1-2" class="col-md-1 2 -3" onclick="myFunction(1, 2);"></div>
+			  <div id="2-2" class="col-md-1 3 -3" onclick="myFunction(2, 2);"></div>
+			  <div id="3-2" class="col-md-1 4 -3" onclick="myFunction(3, 2);"></div>
+			  <div id="4-2" class="col-md-1 5 -3" onclick="myFunction(4, 2);"></div>
+			  <div id="5-2" class="col-md-1 6 -3" onclick="myFunction(5, 2);"></div>
+			  <div id="6-2" class="col-md-1 7 -3" onclick="myFunction(6, 2);"></div>
+			  <div id="7-2" class="col-md-1 8 -3" onclick="myFunction(7, 2);"></div>
+			</div>
+			<div class="row 04">
+			  <div id="0-3" class="col-md-1 1 -4" onclick="myFunction(0, 3);"></div>
+			  <div id="1-3" class="col-md-1 2 -4" onclick="myFunction(1, 3);"></div>
+			  <div id="2-3" class="col-md-1 3 -4" onclick="myFunction(2, 3);"></div>
+			  <div id="3-3" class="col-md-1 4 -4" onclick="myFunction(3, 3);"></div>
+			  <div id="4-3" class="col-md-1 5 -4" onclick="myFunction(4, 3);"></div>
+			  <div id="5-3" class="col-md-1 6 -4" onclick="myFunction(5, 3);"></div>
+			  <div id="6-3" class="col-md-1 7 -4" onclick="myFunction(6, 3);"></div>
+			  <div id="7-3" class="col-md-1 8 -4" onclick="myFunction(7, 3);"></div>
+			</div>
+			<div class="row 05">
+			  <div id="0-4" class="col-md-1 1 -5" onclick="myFunction(0, 4);"></div>
+			  <div id="1-4" class="col-md-1 2 -5" onclick="myFunction(1, 4);"></div>
+			  <div id="2-4" class="col-md-1 3 -5" onclick="myFunction(2, 4);"></div>
+			  <div id="3-4" class="col-md-1 4 -5" onclick="myFunction(3, 4);"></div>
+			  <div id="4-4" class="col-md-1 5 -5" onclick="myFunction(4, 4);"></div>
+			  <div id="5-4" class="col-md-1 6 -5" onclick="myFunction(5, 4);"></div>
+			  <div id="6-4" class="col-md-1 7 -5" onclick="myFunction(6, 4);"></div>
+			  <div id="7-4" class="col-md-1 8 -5" onclick="myFunction(7, 4);"></div>
+			</div>
+			<div class="row 06">
+			  <div id="0-5" class="col-md-1 1 -6" onclick="myFunction(0, 5);"></div>
+			  <div id="1-5" class="col-md-1 2 -6" onclick="myFunction(1, 5);"></div>
+			  <div id="2-5" class="col-md-1 3 -6" onclick="myFunction(2, 5);"></div>
+			  <div id="3-5" class="col-md-1 4 -6" onclick="myFunction(3, 5);"></div>
+			  <div id="4-5" class="col-md-1 5 -6" onclick="myFunction(4, 5);"></div>
+			  <div id="5-5" class="col-md-1 6 -6" onclick="myFunction(5, 5);"></div>
+			  <div id="6-5" class="col-md-1 7 -6" onclick="myFunction(6, 5);"></div>
+			  <div id="7-5" class="col-md-1 8 -6" onclick="myFunction(7, 5);"></div>
+			</div>
+			<div class="row 07">
+			  <div id="0-6" class="col-md-1 1 -7" onclick="myFunction(0, 6);"></div>
+			  <div id="1-6" class="col-md-1 2 -7" onclick="myFunction(1, 6);"></div>
+			  <div id="2-6" class="col-md-1 3 -7" onclick="myFunction(2, 6);"></div>
+			  <div id="3-6" class="col-md-1 4 -7" onclick="myFunction(3, 6);"></div>
+			  <div id="4-6" class="col-md-1 5 -7" onclick="myFunction(4, 6);"></div>
+			  <div id="5-6" class="col-md-1 6 -7" onclick="myFunction(5, 6);"></div>
+			  <div id="6-6" class="col-md-1 7 -7" onclick="myFunction(6, 6);"></div>
+			  <div id="7-6" class="col-md-1 8 -7" onclick="myFunction(7, 6);"></div>
+			</div>
+			<div class="row 08">
+			  <div id="0-7" class="col-md-1 1 -8" onclick="myFunction(0, 7);"></div>
+			  <div id="1-7" class="col-md-1 2 -8" onclick="myFunction(1, 7);"></div>
+			  <div id="2-7" class="col-md-1 3 -8" onclick="myFunction(2, 7);"></div>
+			  <div id="3-7" class="col-md-1 4 -8" onclick="myFunction(3, 7);"></div>
+			  <div id="4-7" class="col-md-1 5 -8" onclick="myFunction(4, 7);"></div>
+			  <div id="5-7" class="col-md-1 6 -8" onclick="myFunction(5, 7);"></div>
+			  <div id="6-7" class="col-md-1 7 -8" onclick="myFunction(6, 7);"></div>
+			  <div id="7-7" class="col-md-1 8 -8" onclick="myFunction(7, 7);"></div>
+			</div>
+		</div>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script src='bootstrap/js/bootstrap.min.js'></script>
+	</body>
+</html>
