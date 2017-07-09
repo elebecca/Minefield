@@ -7,18 +7,42 @@
 
 <script type="text/javascript">
 
+//( x < 4) right
+//( x > 4) left
+//( y > 1) up
+//( y < 1) down
+
 var targetX = 4;
 var targetY = 1;
 
 function myFunction(x, y) {
+	var clickElements = document.getElementById(x + "-" + y);
   if ( targetX === x && targetY === y){
   	console.log("you won have a star");
-  	document.getElementById(x + "-" + y).setAttribute("style", "background-color: black");  //"background-image:url('./assets/images/east.png')");
+  	setBackroundImage(clickElements, "star")  
   }
   else {
-    console.log("missed " + x + " " + y);
 
+    console.log("missed " + x + " " + y);
+    if ( x < 4){
+	setBackroundImage(clickElements, "east")
+    }
+    if ( x > 4){
+    setBackroundImage(clickElements, "west")	
+    }
+    if ( y > 1){
+    setBackroundImage(clickElements, "north")
+    }
+    if ( y < 1){
+    setBackroundImage(clickElements, "south")
+    }
   }
+
+}
+
+function setBackroundImage(clickElements, backgroundImage) {
+
+clickElements.setAttribute("style", "background-image:url('./assets/images/"+ backgroundImage + ".png')");
 
 }
 
