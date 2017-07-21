@@ -4,16 +4,31 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/main.css">
 		<title>minefield</title>
+	</head>
+
 
 <script type="text/javascript">
+
 
 //( x < 4) right
 //( x > 4) left
 //( y > 1) up
 //( y < 1) down
 
-var targetX = 4;
-var targetY = 1;
+var min = 0 ;
+var max = 7 ;
+
+var targetX = getRandomIntInclusive( min , max );
+var targetY = getRandomIntInclusive( min , max );
+
+var loserX = getRandomIntInclusive( min , max );
+var loserY = getRandomIntInclusive( min , max );
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
 
 function myFunction(x, y) {
 	var clickElements = document.getElementById(x + "-" + y);
@@ -21,19 +36,23 @@ function myFunction(x, y) {
   	console.log("you won have a star");
   	setBackroundImage(clickElements, "star")  
   }
-  else {
 
+  else if ( loserX === x && loserY === y){
+  	console.log("loser");
+  	setBackroundImage(clickElements, "bomb")
+  }
+  else {
     console.log("missed " + x + " " + y);
-    if ( x < 4){
+    if ( x < targetX){
 	setBackroundImage(clickElements, "east")
     }
-    if ( x > 4){
+    if ( x > targetX){
     setBackroundImage(clickElements, "west")	
     }
-    if ( y > 1){
+    if ( y > targetY){
     setBackroundImage(clickElements, "north")
     }
-    if ( y < 1){
+    if ( y < targetY){
     setBackroundImage(clickElements, "south")
     }
   }
