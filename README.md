@@ -3,18 +3,18 @@
 Prototype for a game created entirely with html / css and javascript.
 Prototype for a game created entirely with html / css and javascript.
 I created a grid where the elements loserX, loserY (skull) targetX and targetY (beer) are random.
-Arrow elements succeed in following the target element with this simple pattern:
+Arrow elements succeed in following the target element with this simple method:
      
      ```(X <targetX) {
      SetBackroundImage (clickElements, "east")
-     }
-     If (x> targetX) {
+     }```
+     ```If (x> targetX) {
      SetBackroundImage (clickElements, "west")
-     }
-     If (y> targetY) {
+     }```
+     ```If (y> targetY) {
      SetBackroundImage (clickElements, "north")
-     }
-     If (y <targetY) {
+     }```
+     ```If (y <targetY) {
      SetBackroundImage (clickElements, "south")
      }```
   
