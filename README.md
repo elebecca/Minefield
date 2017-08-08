@@ -17,7 +17,7 @@ Arrow elements succeed in following the target element with this simple method:<
      } <br/>
      If (y <targetY) { <br/>
      SetBackroundImage (clickElements, "south") <br/>
-     } <br/>
+     } 
 
 
   
