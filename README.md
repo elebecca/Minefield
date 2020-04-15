@@ -1,34 +1,26 @@
-# MINEFIEL
- ## Description
-<p>Prototype for a game created entirely with html / css and javascript.
-Prototype for a game created entirely with html / css and javascript.
-I created a grid where the elements loserX, loserY (skull) targetX and targetY (beer) are random.
-Arrow elements succeed in following the target element with this simple method:</p>
-     
- 
-     If (x <targetX) { <br/>
-     SetBackroundImage (clickElements, "east") <br/>
-     } <br/>
-     If (x> targetX) <br/>
-     SetBackroundImage (clickElements, "west") <br/>
-     } <br/>
-     If (y> targetY) { <br/>
-     SetBackroundImage (clickElements, "north") <br/>
-     } <br/>
-     If (y <targetY) { <br/>
-     SetBackroundImage (clickElements, "south") <br/>
-     } 
+ 
+
+# Minefield 
+
+[Task](#Task) | [Getting Started](#Getting_Started) | [Technologies](#Technologies) | [User Stories](#User_Stories)  | [screenshot](#screenshot) 
 
 
-  
- 
- ## Tech
-  
-  * Front end HTML5/CSS
-  * JavaScript
-  * Sublime Text 2
-  
-  
- 
- ## Team
-  Elena Beccaro - Front End and Designer
+## <a name="Task">The Task</a>
+
+Build a game web application that allow you to play to minefield. The goal of the game is to find the beer follow the arrow.Be careful, if you find the skull you will lose. This is my first attempt to create somthing with Javascript.
+The web site is fully responsive
+
+
+## <a name="Getting_Started">Getting Started</a>
+
+1. Fork this repo, and clone to your local machine. Navigate into the folder.
+2. Open `index.html` in your browser.
+
+## <a name="Technologies">Technologies</a>
+ - Javascript
+ - HTML
+ - CSS
+
+## <a name="screenshot">screenshot</a>
+![screenshot](game.jpg)
+
