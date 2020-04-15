@@ -22,5 +22,5 @@ The web site is fully responsive
  - CSS
 
 ## <a name="screenshot">screenshot</a>
-![screenshot](game.jpg)
+![screenshot](screenshot.png)
 
