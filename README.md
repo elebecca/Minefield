@@ -2,7 +2,7 @@
 
 # Minefield 
 
-[Task](#Task) | [Getting Started](#Getting_Started) | [Technologies](#Technologies) | [User Stories](#User_Stories)  | [screenshot](#screenshot) 
+[Task](#Task) | [Getting Started](#Getting_Started) | [Technologies](#Technologies) | [screenshot](#screenshot) 
 
 
 ## <a name="Task">The Task</a>
@@ -21,6 +21,6 @@ The web site is fully responsive
  - HTML
  - CSS
 
-## <a name="screenshot">screenshot</a>
+## <a name="screenshot">Screenshot</a>
 ![screenshot](screenshot.png)
 
